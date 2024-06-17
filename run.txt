@@ -1,0 +1,3 @@
+docker run -it -v "$(pwd)":/usr/src/app  <tên>:<version>
+vd:
+docker run -it -v "$(pwd)":/usr/src/app  gemini:1

@@ -1,0 +1,3 @@
+chạy 1 lần
+
+docker build . -t <ten>:<version>

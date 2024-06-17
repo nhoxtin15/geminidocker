@@ -1,3 +1,11 @@
+#tren mac
 docker run -it -v "$(pwd)":/usr/src/app  <tên>:<version>
+#window
+docker run -it -v "${PWD}:/usr/src/app" <tên>:<version>
 vd:
+
+#tren mac
 docker run -it -v "$(pwd)":/usr/src/app  gemini:1 --key <key>
+#window
+docker run -it -v "${PWD}:/usr/src/app" gemini:1 --key <key>
+

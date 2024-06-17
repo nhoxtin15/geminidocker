@@ -1,6 +1,7 @@
 
 
 import google.generativeai as genai
+import argparse
 import os
 
 class GenAI:
@@ -34,7 +35,15 @@ class GenAI:
 
 
 
-key = ""
 
-GenAI.init(key)
-GenAI.gen()
+if __name__ == "__main__":
+	# Replace with your API key
+	parse = argparse.ArgumentParser()
+	parse.add_argument('--key', type=str, help='API Key')
+	args = parse.parse_args()
+	key = args.key
+	GenAI.init(key)
+	GenAI.gen()
+
+
+
